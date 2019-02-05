@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default class App extends React.Component {
+export default class Grid extends React.Component {
   render() {
     return (
       <div>
-        <h1>Stateful component</h1>
+        <h1>Grid</h1>
       </div>
     );
   }
