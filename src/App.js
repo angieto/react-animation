@@ -15,12 +15,21 @@ class App extends Component {
     facts
   }
 
+  updateClicked = (id) => {
+    const updatedState = {...this.state};
+    const fact = updatedState.facts[id];
+    fact.clicked = !fact.clicked;
+    this.setState(updatedState)
+  };
+
   render() {
     return (
       <div className={styles.app}>
         <Title />
         <Background />
-        <Grid facts={this.state.facts} />
+        <Grid 
+          facts={this.state.facts}
+          updateClicked={this.updateClicked} />
         <Rocket />
         <Smoke />
       </div>
