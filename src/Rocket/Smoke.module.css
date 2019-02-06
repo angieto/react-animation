@@ -10,3 +10,8 @@
     opacity: 0.5;
 }
 
+@media (max-width: 1200px) {
+    .smoke {
+        display: none;
+    }
+}
